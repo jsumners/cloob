@@ -1,0 +1,44 @@
+{
+  "name": "cloob",
+  "version": "1.0.0",
+  "description": "Cloob is a database migration tool and API",
+  "main": "cloob.js",
+  "scripts": {
+    "test": "standard && tap --no-cov test/*.test.js"
+  },
+  "bin": {
+    "cloob": "./bin.js"
+  },
+  "precommit": [
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsumners/cloob.git"
+  },
+  "keywords": [
+    "migration",
+    "migrate",
+    "database",
+    "postgresql"
+  ],
+  "author": "James Sumners <james.sumners@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsumners/cloob/issues"
+  },
+  "homepage": "https://github.com/jsumners/cloob#readme",
+  "devDependencies": {
+    "pre-commit": "^1.1.3",
+    "standard": "^8.6.0",
+    "tap": "^8.0.1"
+  },
+  "dependencies": {
+    "abstract-logging": "^1.0.0",
+    "bluebird": "^3.4.6",
+    "bluebird-co": "^2.2.0",
+    "commander": "^2.9.0",
+    "pg": "^6.1.0",
+    "pino": "^3.0.5"
+  }
+}
